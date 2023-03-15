@@ -1,0 +1,1347 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../Book1.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../Book1.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.0/math.js"></script>
+<script src="setup.js"></script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72">
+
+<table border=0 cellpadding=0 cellspacing=0 width=1537 style='border-collapse:
+ collapse;table-layout:fixed;width:1152pt'>
+ <col width=44 style='mso-width-source:userset;mso-width-alt:1564;width:33pt'>
+ <col width=354 style='mso-width-source:userset;mso-width-alt:12572;width:265pt'>
+ <col width=58 style='mso-width-source:userset;mso-width-alt:2048;width:43pt'>
+ <col width=42 style='mso-width-source:userset;mso-width-alt:1507;width:32pt'>
+ <col width=58 style='mso-width-source:userset;mso-width-alt:2048;width:43pt'>
+ <col width=42 style='mso-width-source:userset;mso-width-alt:1507;width:32pt'>
+ <col width=58 style='mso-width-source:userset;mso-width-alt:2048;width:43pt'>
+ <col width=42 style='mso-width-source:userset;mso-width-alt:1507;width:32pt'>
+ <col width=58 style='mso-width-source:userset;mso-width-alt:2048;width:43pt'>
+ <col width=42 style='mso-width-source:userset;mso-width-alt:1507;width:32pt'>
+ <col width=58 style='mso-width-source:userset;mso-width-alt:2048;width:43pt'>
+ <col width=42 style='mso-width-source:userset;mso-width-alt:1507;width:32pt'>
+ <col width=58 style='mso-width-source:userset;mso-width-alt:2048;width:43pt'>
+ <col width=42 style='mso-width-source:userset;mso-width-alt:1507;width:32pt'>
+ <col width=58 style='mso-width-source:userset;mso-width-alt:2048;width:43pt'>
+ <col width=42 style='mso-width-source:userset;mso-width-alt:1507;width:32pt'>
+ <col width=58 style='mso-width-source:userset;mso-width-alt:2048;width:43pt'>
+ <col width=42 style='mso-width-source:userset;mso-width-alt:1507;width:32pt'>
+ <col width=64 style='width:48pt'>
+ <col width=211 style='mso-width-source:userset;mso-width-alt:7509;width:158pt'>
+ <col width=64 style='width:48pt'>
+ <tr height=38 style='height:28.8pt'>
+  <td height=38 class=xl160 width=44 style='height:28.8pt;width:33pt'>&nbsp;</td>
+  <td class=xl159 width=354 style='width:265pt'>Light Damage Calculator<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=xl160 width=58 style='width:43pt'>&nbsp;</td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=211 style='width:158pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 colspan=21 style='height:15.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=22 style='mso-height-source:userset;height:17.25pt'>
+  <td height=22 style='height:17.25pt'></td>
+  <td colspan=4 class=xl161><font class="font17">Directions: </font><font
+  class="font16"><span style='mso-spacerun:yes'>&nbsp;&nbsp;</span>Input values
+  into yellow field.<span style='mso-spacerun:yes'>&nbsp; </span>Green fields
+  output results.</font></td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=58 style='mso-height-source:userset;height:43.8pt'>
+  <td height=58 style='height:43.8pt'></td>
+  <td colspan=3 class=xl162 width=454 style='width:340pt'><font class="font19">Version
+  .9 Beta.</font><font class="font18"><span style='mso-spacerun:yes'>&nbsp;
+  </span>Calculators were develped by Scott Rosenfeld and Anna Yuchen Zhou
+  based on data from CIE157:2004, The Control of Damage to Museum Objects by
+  Optical Radiation.</font></td>
+  <td class=xl161>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=14 style='mso-height-source:userset;height:10.2pt'>
+  <td height=14 style='height:10.2pt'></td>
+  <td class=xl162 width=354 style='width:265pt'>&nbsp;</td>
+  <td class=xl162 width=58 style='width:43pt'>&nbsp;</td>
+  <td class=xl162 width=42 style='width:32pt'>&nbsp;</td>
+  <td class=xl161>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl163>*JND = Just noticiable fade.<span
+  style='mso-spacerun:yes'>&nbsp; </span>See notes below for details.<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=xl164>&nbsp;</td>
+  <td class=xl164>&nbsp;</td>
+  <td class=xl163>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl163>*For research purposes, follow this advise at your own risk</td>
+  <td class=xl163>&nbsp;</td>
+  <td class=xl163>&nbsp;</td>
+  <td class=xl163>&nbsp;</td>
+  <td colspan=16 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl67></td>
+  <td colspan=19 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 colspan=2 style='height:15.0pt;mso-ignore:colspan'></td>
+  <td class=xl66>&nbsp;</td>
+  <td class=xl66>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl68>Calculator #1: Select illuminannce and preservation target <span
+  style='display:none'>to calculate days per year of constant exposure to JND
+  (assumes lights are on for 8 hours a day)</span></td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td rowspan=2 class=xl70 width=354 style='width:265pt'>Light Sensitivity of
+  Material;<span style='mso-spacerun:yes'>&nbsp; </span><br>
+    ISO Blue Wool<span style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td colspan=6 class=xl71 style='border-right:1.0pt solid black'>High Light
+  Sensitivity</td>
+  <td colspan=6 class=xl74>Moderate Light Senstivity</td>
+  <td colspan=4 class=xl77 style='border-right:1.0pt solid black'>Low Light
+  Sensitivity</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td colspan=2 class=xl81>1</td>
+  <td colspan=2 class=xl81>2</td>
+  <td colspan=2 class=xl81 style='border-right:1.0pt solid black'>3</td>
+  <td colspan=2 class=xl81 style='border-left:none'>4</td>
+  <td colspan=2 class=xl81>5</td>
+  <td colspan=2 class=xl81 style='border-right:1.0pt solid black'>6</td>
+  <td colspan=2 class=xl81 style='border-left:none'>7</td>
+  <td colspan=2 class=xl81 style='border-right:1.0pt solid black'>8</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl84 width=354 style='width:265pt'>Amount of UV</td>
+  <td class=xl85>No UV</td>
+  <td class=xl86>UV</td>
+  <td class=xl87>No UV</td>
+  <td class=xl86>UV</td>
+  <td class=xl87>No UV</td>
+  <td class=xl86>UV</td>
+  <td class=xl87>No UV</td>
+  <td class=xl86>UV</td>
+  <td class=xl87>No UV</td>
+  <td class=xl86>UV</td>
+  <td class=xl87>No UV</td>
+  <td class=xl86>UV</td>
+  <td class=xl87>No UV</td>
+  <td class=xl86>UV</td>
+  <td class=xl87>No UV</td>
+  <td class=xl86>UV</td>
+  <td class=xl88>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td class=xl89 style='border-top:none'>Amount of light in Lux<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td id="c1_s1_p1" colspan=2 class=xl90 style='border-right:1.0pt solid black;border-left:
+  none'>50</td>
+  <td id="c1_s2_p1" colspan=2 class=xl92 style='border-right:1.0pt solid black'>50</td>
+  <td id="c1_s3_p1" colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td id="c1_s4_p1" colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td id="c1_s5_p1" colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>150</td>
+  <td id="c1_s6_p1" colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td id="c1_s7_p1" colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>300</td>
+  <td id="c1_s8_p1" colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>350</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl89 style='border-top:none'>Preservation goal in years to JND</td>
+  <td id="c1_s1_p2" colspan=2 class=xl95 style='border-right:1.0pt solid black'>100</td>
+  <td id="c1_s2_p2" colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td id="c1_s3_p2" colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>50</td>
+  <td id="c1_s4_p2" colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td id="c1_s5_p2" colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td id="c1_s6_p2" colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td id="c1_s7_p2" colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>200</td>
+  <td id="c1_s8_p2" colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>200</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl98 style='border-top:none'># of days of exposure per year @ 8
+  hour days</td>
+  <td id=c1_s1_0 class=xl99 align=right style='border-top:none'>7.5</td>
+  <td id=c1_s1_1 class=xl100 align=right style='border-top:none'>5.5</td>
+  <td id=c1_s2_0 class=xl101 align=right style='border-top:none;border-left:none'>25</td>
+  <td id=c1_s2_1 class=xl102 align=right style='border-top:none'>15</td>
+  <td class=xl101 align=right style='border-top:none;border-left:none'>75</td>
+  <td class=xl102 align=right style='border-top:none'>38</td>
+  <td class=xl101 align=right style='border-top:none;border-left:none'>125</td>
+  <td class=xl102 align=right style='border-top:none'>44</td>
+  <td class=xl103 align=right style='border-top:none;border-left:none'>250</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'>67</td>
+  <td class=xl103 align=right style='border-top:none;border-left:none'>365</td>
+  <td class=xl102 align=right style='border-top:none;border-left:none'>250</td>
+  <td class=xl103 align=right style='border-top:none;border-left:none'>365</td>
+  <td class=xl104 align=right style='border-top:none'>104</td>
+  <td class=xl103 align=right style='border-top:none'>365</td>
+  <td class=xl104 align=right style='border-top:none'>214</td>
+  <td class=xl88>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl166>&nbsp;</td>
+  <td class=xl105>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl105>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl105>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl105>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl105>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl105>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl105>&nbsp;</td>
+  <td class=xl105>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl107 height=22 style='mso-height-source:userset;height:16.8pt'>
+  <td height=22 class=xl107 width=44 style='height:16.8pt;width:33pt'>&nbsp;</td>
+  <td colspan=17 class=xl106 width=1154 style='width:865pt'>Calculator #2:<span
+  style='mso-spacerun:yes'>&nbsp; </span>Select illuminance and preservation
+  target to calculate number of minutes of daily exposure to JND, especially
+  useful for lights with motion sensors.</td>
+  <td class=xl107 width=64 style='width:48pt'>&nbsp;</td>
+  <td class=xl108 width=211 style='width:158pt'></td>
+  <td class=xl108 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl65 height=22 style='height:16.2pt'>
+  <td height=22 class=xl65 style='height:16.2pt'>&nbsp;</td>
+  <td rowspan=2 class=xl140 width=354 style='border-bottom:1.0pt solid black;
+  border-top:none;width:265pt'>Light Sensitivity of Material;<span
+  style='mso-spacerun:yes'>&nbsp; </span><br>
+    ISO Blue Wool<span style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td colspan=6 class=xl167 style='border-right:1.0pt solid black'>High Light
+  Sensitivity</td>
+  <td colspan=6 class=xl74>Moderate Light Senstivity</td>
+  <td colspan=4 class=xl111 style='border-right:1.0pt solid black'>Low Light
+  Sensitivity</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt'>&nbsp;</td>
+  <td colspan=2 class=xl168 style='border-right:1.0pt solid black'>1</td>
+  <td colspan=2 class=xl114 style='border-right:1.0pt solid black;border-left:
+  none'>2</td>
+  <td colspan=2 class=xl114 style='border-right:1.0pt solid black;border-left:
+  none'>3</td>
+  <td colspan=2 class=xl114 style='border-right:1.0pt solid black;border-left:
+  none'>4</td>
+  <td colspan=2 class=xl114 style='border-right:1.0pt solid black;border-left:
+  none'>5</td>
+  <td colspan=2 class=xl114 style='border-right:1.0pt solid black;border-left:
+  none'>6</td>
+  <td colspan=2 class=xl116 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl118 style='border-right:1.0pt solid black'>8</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=22 style='mso-height-source:userset;height:16.2pt'>
+  <td height=22 class=xl65 style='height:16.2pt'>&nbsp;</td>
+  <td class=xl84 width=354 style='border-top:none;width:265pt'>Amount of UV</td>
+  <td class=xl119 style='border-top:none;border-left:none'>No UV</td>
+  <td class=xl120 style='border-top:none'>UV</td>
+  <td class=xl119 style='border-top:none'>No UV</td>
+  <td class=xl120 style='border-top:none'>UV</td>
+  <td class=xl119 style='border-top:none'>No UV</td>
+  <td class=xl120 style='border-top:none'>UV</td>
+  <td class=xl119 style='border-top:none'>No UV</td>
+  <td class=xl120 style='border-top:none'>UV</td>
+  <td class=xl119 style='border-top:none'>No UV</td>
+  <td class=xl120 style='border-top:none'>UV</td>
+  <td class=xl119 style='border-top:none'>No UV</td>
+  <td class=xl120 style='border-top:none'>UV</td>
+  <td class=xl119 style='border-top:none'>No UV</td>
+  <td class=xl120 style='border-top:none'>UV</td>
+  <td class=xl119 style='border-top:none'>No UV</td>
+  <td class=xl120 style='border-top:none'>UV</td>
+  <td class=xl121>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl165 style='border-top:none'>Amount of day in a week (1-7)</td>
+  <td colspan=2 class=xl122 style='border-right:1.0pt solid black;border-left:
+  none'>6</td>
+  <td colspan=2 class=xl122 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl122 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl122 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl122 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl122 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl122 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl124 style='border-right:1.0pt solid black'>7</td>
+  <td class=xl121 style='border-left:none'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl125 style='border-top:none'>Amount of light in Lux<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td colspan=2 class=xl126 style='border-right:1.0pt solid black'>50</td>
+  <td colspan=2 class=xl128 style='border-right:1.0pt solid black;border-left:
+  none'>50</td>
+  <td colspan=2 class=xl128 style='border-right:1.0pt solid black;border-left:
+  none'>50</td>
+  <td colspan=2 class=xl128 style='border-right:1.0pt solid black;border-left:
+  none'>50</td>
+  <td colspan=2 class=xl128 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td colspan=2 class=xl128 style='border-right:1.0pt solid black;border-left:
+  none'>300</td>
+  <td colspan=2 class=xl128 style='border-right:1.0pt solid black;border-left:
+  none'>300</td>
+  <td colspan=2 class=xl126 style='border-right:1.0pt solid black;border-left:
+  none'>300</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl125 style='border-top:none'>Preservation goal in years to JND</td>
+  <td colspan=2 class=xl126 style='border-right:1.0pt solid black'>50</td>
+  <td colspan=2 class=xl126 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td colspan=2 class=xl126 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td colspan=2 class=xl126 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td colspan=2 class=xl126 style='border-right:1.0pt solid black;border-left:
+  none'>50</td>
+  <td colspan=2 class=xl126 style='border-right:1.0pt solid black;border-left:
+  none'>200</td>
+  <td colspan=2 class=xl126 style='border-right:1.0pt solid black;border-left:
+  none'>200</td>
+  <td colspan=2 class=xl130 style='border-right:1.0pt solid black'>200</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt'>&nbsp;</td>
+  <td class=xl131>Hours and minutes of daily exposure</td>
+  <td class=xl132 align=right style='border-top:none'>0:23</td>
+  <td class=xl133 align=right style='border-top:none'>0:16</td>
+  <td class=xl134 align=right style='border-top:none'>0:32</td>
+  <td class=xl132 align=right style='border-top:none'>0:19</td>
+  <td class=xl134 align=right style='border-top:none'>1:38</td>
+  <td class=xl133 align=right style='border-top:none;border-left:none'>0:49</td>
+  <td class=xl134 align=right style='border-top:none'>5:28</td>
+  <td class=xl135 align=right style='border-top:none;border-left:none'>1:54</td>
+  <td class=xl136 align=right style='border-top:none'>16:25</td>
+  <td class=xl135 align=right style='border-top:none;border-left:none'>4:22</td>
+  <td class=xl132 align=right style='border-top:none'>4:33</td>
+  <td class=xl135 align=right style='border-top:none'>0:54</td>
+  <td class=xl136 align=right style='border-top:none'>13:41</td>
+  <td class=xl132 align=right style='border-top:none'>2:16</td>
+  <td class=xl134 align=right style='border-top:none'>24:00</td>
+  <td class=xl132 align=right style='border-top:none'>5:28</td>
+  <td class=xl121>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl137></td>
+  <td class=xl138></td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl138></td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl138></td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl138></td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl138></td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl138></td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl138></td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl138></td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt'>&nbsp;</td>
+  <td class=xl139>Calculator #3:<span style='mso-spacerun:yes'>&nbsp;
+  </span>Select Illuminance and minutes of daily exp<span style='display:none'>osure
+  to calculate years to JND (assumes 7 days a week of operation).<span
+  style='mso-spacerun:yes'>&nbsp;</span></span></td>
+  <td class=xl66>&nbsp;</td>
+  <td class=xl66>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=22 style='height:16.2pt'>
+  <td height=22 class=xl65 style='height:16.2pt'>&nbsp;</td>
+  <td rowspan=2 class=xl140 width=354 style='width:265pt'>Light Sensitivity of
+  Material;<span style='mso-spacerun:yes'>&nbsp; </span><br>
+    ISO Blue Wool<span style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td colspan=6 class=xl72>High Light Sensitivity</td>
+  <td colspan=6 class=xl142 style='border-right:1.0pt solid black'>Moderate
+  Light Senstivity</td>
+  <td colspan=4 class=xl144 style='border-right:1.0pt solid black'>Low Light
+  Sensitivity</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt'>&nbsp;</td>
+  <td colspan=2 class=xl81>1</td>
+  <td colspan=2 class=xl81>2</td>
+  <td colspan=2 class=xl81 style='border-right:1.0pt solid black'>3</td>
+  <td colspan=2 class=xl81 style='border-left:none'>4</td>
+  <td colspan=2 class=xl81 style='border-right:1.0pt solid black'>5</td>
+  <td colspan=2 class=xl82 style='border-right:1.0pt solid black'>6</td>
+  <td colspan=2 class=xl81 style='border-left:none'>7</td>
+  <td colspan=2 class=xl81 style='border-right:1.0pt solid black'>8</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt'>&nbsp;</td>
+  <td class=xl146 width=354 style='width:265pt'>Amount of UV</td>
+  <td class=xl114 style='border-top:none'>No UV</td>
+  <td class=xl147 style='border-top:none'>UV</td>
+  <td class=xl114 style='border-top:none'>No UV</td>
+  <td class=xl147 style='border-top:none'>UV</td>
+  <td class=xl114 style='border-top:none'>No UV</td>
+  <td class=xl147 style='border-top:none'>UV</td>
+  <td class=xl114 style='border-top:none'>No UV</td>
+  <td class=xl147 style='border-top:none'>UV</td>
+  <td class=xl114 style='border-top:none'>No UV</td>
+  <td class=xl147 style='border-top:none'>UV</td>
+  <td class=xl114 style='border-top:none'>No UV</td>
+  <td class=xl147 style='border-top:none'>UV</td>
+  <td class=xl114 style='border-top:none'>No UV</td>
+  <td class=xl147 style='border-top:none'>UV</td>
+  <td class=xl114 style='border-top:none'>No UV</td>
+  <td class=xl148 style='border-top:none'>UV</td>
+  <td class=xl121 style='border-left:none'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl165 style='border-top:none'>Amount of day in a week (1-7)</td>
+  <td colspan=2 class=xl149 style='border-right:1.0pt solid black;border-left:
+  none'>6</td>
+  <td colspan=2 class=xl149 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl149 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl149 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl149 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl149 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl149 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td colspan=2 class=xl149 style='border-right:1.0pt solid black;border-left:
+  none'>7</td>
+  <td class=xl121 style='border-left:none'>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl89 style='border-top:none'>Lux</td>
+  <td colspan=2 class=xl95 style='border-right:1.0pt solid black'>50</td>
+  <td colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>50</td>
+  <td colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>50</td>
+  <td colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>200</td>
+  <td colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>50</td>
+  <td colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>250</td>
+  <td colspan=2 class=xl97 style='border-right:1.0pt solid black;border-left:
+  none'>350</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl89 style='border-top:none'>Minutes of Daily Exposure</td>
+  <td colspan=2 class=xl92 style='border-right:1.0pt solid black'>480</td>
+  <td colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>480</td>
+  <td colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>480</td>
+  <td colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>480</td>
+  <td colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>480</td>
+  <td colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>480</td>
+  <td colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>480</td>
+  <td colspan=2 class=xl94 style='border-right:1.0pt solid black;border-left:
+  none'>480</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl65 style='height:15.0pt'>&nbsp;</td>
+  <td class=xl98 style='border-top:none'>Years to JND</td>
+  <td class=xl151 align=right style='border-top:none'>2.4</td>
+  <td class=xl100 align=right style='border-top:none;border-left:none'>1.8</td>
+  <td class=xl151 align=right style='border-top:none'>6.8</td>
+  <td class=xl100 align=right style='border-top:none;border-left:none'>4.1</td>
+  <td class=xl151 align=right style='border-top:none'>20.5</td>
+  <td class=xl99 align=right style='border-top:none'>10.3</td>
+  <td class=xl152 align=right style='border-top:none'>34.2</td>
+  <td class=xl153 align=right style='border-top:none;border-left:none'>12.0</td>
+  <td class=xl152 align=right style='border-top:none'>51.3</td>
+  <td class=xl99 align=right style='border-top:none'>13.7</td>
+  <td class=xl152 align=right style='border-top:none'>684.5</td>
+  <td class=xl100 align=right style='border-top:none;border-left:none'>136.9</td>
+  <td class=xl151 align=right style='border-top:none'>410.7</td>
+  <td class=xl100 align=right style='border-top:none;border-left:none'>68.4</td>
+  <td class=xl151 align=right style='border-top:none'>977.8</td>
+  <td class=xl154 align=right>117.3</td>
+  <td class=xl121>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl155>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl69>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl65 height=19 style='height:14.4pt'>
+  <td height=19 class=xl65 style='height:14.4pt'>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td class=xl65>&nbsp;</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 colspan=21 style='height:14.4pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=66 style='mso-height-source:userset;height:49.2pt'>
+  <td height=66 style='height:49.2pt'></td>
+  <td colspan=7 class=xl156 width=654 style='width:490pt'>Calculator is based
+  on data from CIE157:2004,<span style='mso-spacerun:yes'>&nbsp; </span>The
+  Control of Damage to Museum Objects by Optical Radiation.<span
+  style='mso-spacerun:yes'>&nbsp;&nbsp; </span>The data in this internationaly
+  agreed upon standard was provided <br>
+    by Michalski (1987, 1994, 1997)<span style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=93 style='mso-height-source:userset;height:69.6pt'>
+  <td height=93 style='height:69.6pt'></td>
+  <td class=xl196 style='border-top:none'>Light Sensitivity of Material</td>
+  <td colspan=2 class=xl187 width=100 style='width:75pt'>ISO Bluewool
+  rating<span style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td colspan=2 class=xl179 width=100 style='border-right:.5pt solid black;
+  width:75pt'>Megalux hours to <br>
+    JND*<span style='mso-spacerun:yes'>&nbsp; </span>UV Rich</td>
+  <td colspan=2 class=xl179 width=100 style='border-right:1.0pt solid black;
+  border-left:none;width:75pt'>Megalux hours to<span
+  style='mso-spacerun:yes'>&nbsp; </span><br>
+    JND* No-UV<span style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td class=xl197>High Sensitivity</td>
+  <td colspan=2 class=xl157>1</td>
+  <td colspan=2 class=xl178>0.22</td>
+  <td colspan=2 class=xl181 style='border-right:1.0pt solid black'>0.3</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td class=xl198 style='border-top:none'>&nbsp;</td>
+  <td colspan=2 class=xl202>2</td>
+  <td colspan=2 class=xl183 style='border-right:.5pt solid black'>0.6</td>
+  <td colspan=2 class=xl183 style='border-right:1.0pt solid black;border-left:
+  none'>1</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl199 style='border-top:none'>&nbsp;</td>
+  <td colspan=2 class=xl191>3</td>
+  <td colspan=2 class=xl189 style='border-right:.5pt solid black'>1.5</td>
+  <td colspan=2 class=xl185 style='border-right:1.0pt solid black;border-left:
+  none'>3</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td class=xl197 style='border-top:none'>Medium Sensitivity</td>
+  <td colspan=2 class=xl157>4</td>
+  <td colspan=2 class=xl178>3.5</td>
+  <td colspan=2 class=xl181 style='border-right:1.0pt solid black'>10</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td class=xl198 style='border-top:none'>&nbsp;</td>
+  <td colspan=2 class=xl202>5</td>
+  <td colspan=2 class=xl183 style='border-right:.5pt solid black'>8</td>
+  <td colspan=2 class=xl183 style='border-right:1.0pt solid black;border-left:
+  none'>30</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl199 style='border-top:none'>&nbsp;</td>
+  <td colspan=2 class=xl191>6</td>
+  <td colspan=2 class=xl189 style='border-right:.5pt solid black'>20</td>
+  <td colspan=2 class=xl185 style='border-right:1.0pt solid black;border-left:
+  none'>100</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td class=xl197 style='border-top:none'>Low Sensitivity</td>
+  <td colspan=2 class=xl204>7</td>
+  <td colspan=2 class=xl181 style='border-right:.5pt solid black'>50</td>
+  <td colspan=2 class=xl181 style='border-right:1.0pt solid black;border-left:
+  none'>300</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl199 style='border-top:none'>&nbsp;</td>
+  <td colspan=2 class=xl157>8</td>
+  <td colspan=2 class=xl178>120</td>
+  <td colspan=2 class=xl192 style='border-right:1.0pt solid black'>1000</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'></td>
+  <td class=xl200 style='border-top:none'>Insensitive</td>
+  <td class=xl194>&nbsp;</td>
+  <td class=xl194>&nbsp;</td>
+  <td class=xl194>&nbsp;</td>
+  <td class=xl194>&nbsp;</td>
+  <td class=xl194>&nbsp;</td>
+  <td class=xl195>&nbsp;</td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td class=xl158></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl157></td>
+  <td class=xl157></td>
+  <td class=xl157></td>
+  <td class=xl157></td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td class=xl158></td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+  <td class=xl157></td>
+  <td class=xl157></td>
+  <td class=xl157></td>
+  <td class=xl157></td>
+  <td colspan=13 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl170>NOTES</td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl170></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td colspan=20 class=xl172><font class="font23">a. </font><font class="font24">Mlx
+  h is the exposure unit megalux hours =1000 kilolux hours</font></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl173>&nbsp;</td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+ </tr>
+ <tr class=xl171 height=38 style='mso-height-source:userset;height:28.8pt'>
+  <td height=38 class=xl171 style='height:28.8pt'></td>
+  <td colspan=19 class=xl174 width=1429 style='width:1071pt'><font
+  class="font23">b.</font><font class="font24"> A noticeable fade is defined
+  here as Grey Scale 4 (GS4) , the step used in most lightfastness tests as
+  noticeable. It is approximately equal to a colour difference of 1.6 CIELAB
+  units. There are approximately thirty such steps in the transition from a bright
+  colour to white.</font></td>
+  <td class=xl174 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl173>&nbsp;</td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl173 colspan=19 style='mso-ignore:colspan'><font class="font23">c.
+  </font><font class="font24">UV rich refers to a spectrum similar to daylight
+  through glass. This is the spectrum generally used for the lightfastness data
+  used to derive this table. The exposures here are the best fit to data that
+  varies about �� one Blue Wool step.</font></td>
+  <td class=xl171></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl173>&nbsp;</td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+  <td class=xl171></td>
+ </tr>
+ <tr class=xl171 height=38 style='mso-height-source:userset;height:28.8pt'>
+  <td height=38 class=xl171 style='height:28.8pt'></td>
+  <td colspan=19 class=xl174 width=1429 style='width:1071pt'><font
+  class="font23">d.</font><font class="font24"> Exposures estimated for UV
+  blocked light source are derived from a study on 400 dyes and the blue wool
+  standards themselves. As such, it is only probable, and probably only for
+  organic colourants. These estimates show minor benefit of UV filtration for high
+  sensitivity colourants, but large improvements for low sensitivity
+  colourants. For conservative estimates, use the UV rich scale.</font></td>
+  <td class=xl174 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl174 width=354 style='width:265pt'>&nbsp;</td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+  <td class=xl175 width=211 style='width:158pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=58 style='mso-height-source:userset;height:43.2pt'>
+  <td height=58 class=xl171 style='height:43.2pt'></td>
+  <td colspan=19 class=xl174 width=1429 style='width:1071pt'><font
+  class="font23">e. </font><font class="font24">The specific examples are near
+  optimum tint strength unless noted otherwise (&quot;standard depth&quot; for
+  dyes, peak chroma for pigments.) Heavier concentrations of colourant can be
+  less sensitive by up to two Blue Wool steps. The examples are also for
+  unfaded samples. Partly faded samples may or may not show lower sensitivity.
+  Fading prediction is an imprecise science, so the broad categories of this
+  table<span style='mso-spacerun:yes'>&nbsp; </span>are most practical.
+  Accurate predictions can only be made directly on the artifact in question,
+  or on samples known to be identical. Several researchers are developing
+  microspot tests in Canada, the UK, and the USA.</font></td>
+  <td class=xl174 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl174 width=354 style='width:265pt'>&nbsp;</td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+  <td class=xl175 width=211 style='width:158pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 class=xl171 style='height:15.0pt'></td>
+  <td colspan=20 class=xl174 width=1493 style='width:1119pt'><font
+  class="font23">f.</font><font class="font24"> &quot;Insensitive&quot; to
+  light does not mean guaranteed colour life. Many colourants in this group are
+  sensitive to pollution. Many organic media will chalk or yellow or both if
+  any UV is present.</font></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl174 width=354 style='width:265pt'>&nbsp;</td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+  <td class=xl175 width=211 style='width:158pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=38 style='mso-height-source:userset;height:28.8pt'>
+  <td height=38 class=xl171 style='height:28.8pt'></td>
+  <td colspan=19 class=xl174 width=1429 style='width:1071pt'><font
+  class="font23">g. </font><font class="font24">The particular paint medium
+  makes only small differences to fading rate, it is the colourant that matters
+  in fading, not whether it is oil, or tempera, or watercolour, or acrylic.
+  Media does, however, make large differences to rate of discolouration from
+  pollutants such as ozone and hydrogen sulphide.</font></td>
+  <td class=xl174 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl176 width=354 style='width:265pt'>&nbsp;</td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+  <td class=xl175 width=211 style='width:158pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl176 width=354 style='width:265pt'>&nbsp;</td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+  <td class=xl175 width=211 style='width:158pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=38 style='mso-height-source:userset;height:28.8pt'>
+  <td height=38 class=xl171 style='height:28.8pt'></td>
+  <td colspan=19 class=xl176 width=1429 style='width:1071pt'>Modern pigments
+  offer artists a full palette of colours that has been developed to have high
+  resistance to the effects of light exposure, and pigments that are rated ASTM
+  D4303 Category 1, or Winsor and Newton AA, are all in the insensitive or low
+  sensitivity categories of light-fastness. However, in the past, artists have
+  used many pigments that are much more responsive to light exposure, and Table
+  3.3 shows examples of these.</td>
+  <td class=xl176 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl177 width=354 style='width:265pt'>&nbsp;</td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+  <td class=xl175 width=211 style='width:158pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=38 style='mso-height-source:userset;height:28.8pt'>
+  <td height=38 class=xl171 style='height:28.8pt'></td>
+  <td colspan=19 class=xl177 width=1429 style='width:1071pt'>Furthermore, the
+  light-fastness of a pigment may be substantially affected by how it is
+  applied by the artist. Indigo on wool is a low sensitivity material (ISO 7),
+  and there are many examples in museums of woollen tapestries where indigo is
+  the only pigment that is not seriously faded. However, on paper, cotton or
+  silk, indigo becomes a high sensitivity material (ISO 3) and must be treated
+  with great care if its rich blue hue has not already been faded.</td>
+  <td class=xl177 width=64 style='width:48pt'></td>
+ </tr>
+ <tr class=xl171 height=19 style='height:14.4pt'>
+  <td height=19 class=xl171 style='height:14.4pt'></td>
+  <td class=xl177 width=354 style='width:265pt'>&nbsp;</td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=58 style='width:43pt'></td>
+  <td class=xl175 width=42 style='width:32pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+  <td class=xl175 width=211 style='width:158pt'></td>
+  <td class=xl175 width=64 style='width:48pt'></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <tr height=19 style='height:14.4pt'>
+  <td height=19 style='height:14.4pt'></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=44 style='width:33pt'></td>
+  <td width=354 style='width:265pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=58 style='width:43pt'></td>
+  <td width=42 style='width:32pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=211 style='width:158pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
