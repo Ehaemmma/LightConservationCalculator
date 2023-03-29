@@ -27,7 +27,9 @@ function calculator(r){
     if (calculatorID==="2"){
         const multiply = 1000000*60/p1_value/p2_value/(365.25/7*p3_value)*(uvID==="1"? UV[sensitivity]: non_UV[sensitivity]);
         const compared = Math.min(Math.round(multiply), 24*60);
-        const result = Math.floor(compared/60) + ":" + Math.round(compared-Math.floor(compared/60)*60);
+        const hour = Math.floor(compared/60);
+        const minute = Math.round(compared-hour*60).toString();
+        const result = hour + ":" + (minute.length==1?"0"+minute:minute);
         return result;
     }
     if (calculatorID==="3"){
@@ -37,4 +39,3 @@ function calculator(r){
     }
     return 0;
 }
-
